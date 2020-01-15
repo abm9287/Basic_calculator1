@@ -1,0 +1,58 @@
+<h1 align="center"><strong>{{titulo}}</strong></h1>
+<!---Definir formulario-->
+<form>
+  <div class="form-group">
+    <label>Operando A</label>
+    <input type="number" class="form-control" placeholder="Escribe el numerador" [(ngModel)]= "operandoA" name="operandoA"/>
+  </div>
+
+  <div class="form-group">
+    <label>Operando B</label>
+    <input type="number" class="form-control" placeholder="Escribe el denominador" [(ngModel)]= "operandoB" name="operadorB"/>
+  </div>
+
+ <!--SUMA-->
+  <table align="center">
+    <tr>
+      <th class="border-bottom">
+        <button type="submit" class="btn btn-outline-danger" (click)="onSumar()">SUMA</button>
+      </th>
+    </tr>
+    <tr>
+      <td colsapan="2"><u>{{resultadoSuma}}</u></td>
+    </tr>
+  </table><br><br>
+<!--RESTA-->
+  <table align="center">
+    <tr>
+      <th class="border-bottom">
+        <button type="submit" class="btn btn-outline-danger" (click)="onRestar()">RESTA</button>
+      </th>
+    </tr>
+    <tr>
+      <td colsapan="2"><u>{{resultadoResta}}</u></td>
+    </tr>
+  </table><br><br>
+ <!--MULTILPLICACIÓN-->
+  <table align="center">
+    <tr>
+      <th class="border-bottom">
+        <button type="submit" class="btn btn-outline-danger" (click)="onMultiplicar()">MULTIPLICACIÓN</button>
+      </th>
+    </tr>
+    <tr>
+      <td colsapan="2"><u>{{resulatadoMultiplicar}}</u></td>
+    </tr>
+  </table><br><br>
+ <!--DIVISIÓN-->
+  <table align="center">
+    <tr>
+      <th class="border-bottom">
+        <button type="submit" class="btn btn-outline-danger" (click)="onDividir()">DIVIDIR</button>
+      </th>
+    </tr>
+    <tr>
+      <td colsapan="2"><u>{{resultadoDividir}}</u></td>
+    </tr>
+  </table>
+</form>
